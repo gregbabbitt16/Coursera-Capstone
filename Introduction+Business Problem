@@ -2,7 +2,7 @@ Introduction:
 Grocery stores need to be located as near as possible to their customers. This convenience allows easy access for the customers, who then end up spending more at the stores. Choosing where exactly to place a new grocery store is incredibly important. Building a new store is expensive and requires investment in labor and marketing. The audience or stakeholders is grocery store management, who needs to know they can maximize revenue to justify the investment. 
 
 Business Problem:
-Choose the best location for a new Whole Foods Market in Washington, DC. Whole Foods attracts clients with a high relative income and there are already several stores throughout the city. The goal is to choose a location where incomes have risen recently and there is not yet a Whole Foods market nearby. 
+Choose the best location for a new Whole Foods Market in Washington, DC. Whole Foods is a high-end grocery store chain owned and operated by Amazon. Whole Foods attracts clients with a high relative income and there are already several stores throughout the city. The goal is to choose a location where incomes have risen recently and there is not yet a Whole Foods market nearby. 
 
 Data:
 The DC city government makes income and census tract data available to the public. The data contain median income by census tract for the years 2005 and 2018, which should give us an accurate picture for how incomes have grown in certain neighborhoods. 
