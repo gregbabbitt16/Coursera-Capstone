@@ -5,4 +5,13 @@ Business Problem:
 Choose the best location for a new Whole Foods Market in Washington, DC. Whole Foods attracts clients with a high relative income and there are already several stores throughout the city. The goal is to choose a location where incomes have risen recently and there is not yet a Whole Foods market nearby. 
 
 Data:
-The DC city government makes income and census tract data available to the public. The data contain median income by census tract for the years 2005 and 2018, which should give us an accurate picture for how incomes have grown in certain neighborhoods. The Foursquare data has the grocery store category, so we should be able to filter the queries for just potential competitors and other Whole Foods. You can find a link to the DC income data here: https://opendata.dc.gov/datasets/census-tracts-by-median-income-2000 and https://opendata.dc.gov/datasets/acs-2018-median-household-income-variables-tract/data?geometry=-77.153%2C38.891%2C-76.892%2C38.938&orderBy=B19049_001E&orderByAsc=false 
+The DC city government makes income and census tract data available to the public. The data contain median income by census tract for the years 2005 and 2018, which should give us an accurate picture for how incomes have grown in certain neighborhoods. 
+
+Here is an example of one row of data in the census/income file:
+
+OBJECTID_1	GIS_ID	FEDTRACTNO	TRACTNO	AREASQMI	POPDENSITY	TOTAL	NAME	FULLTOTAL	AGE0_17	AGE0_17PCT	AGE18PLUS	AGE18PLUSP	CHTOTAL	CHWHITE	CHBLACK	CHAMERIND	CHASIAN	CHHISP	CHOTHER	TOTALPERC	TOTAL90	TOTAL00	TOTPOPCHG	TOTPOPCHGP	WHITE	BLACK	AMERIND	ASIAN	HAWAIIAN	OTHER	HISPANIC	OCCUPIEDHO	PCTOWNEROC	TRACT90	COMMENT_	MRDCHREL	MRDCHRELNO	MHHCHREL	MHHCHRELNO	FMHHCHREL	FMHHCHRELN	MARRIED	TOTHOUSEUN	SINGLEFAMI	MULTIUNIT	CONSTRCOST	SINGLECOST	MULTICOST	MULTIPERSO	SINGLEPERS	FAGI_TOTAL_2005	FAGI_MEAN_2005	FAGI_MEDIAN_2005	FAGI_TOTAL_2006	FAGI_MEDIAN_2006	AREA	LEN	SHAPE_Length	SHAPE_Area
+1	Tract00_017	22.01	22.1	0.16027	21869.34548	3505	2000 Tract 22.01	1135	824	0.23509	2681	0.7649	-147	126	-393	46	22	273	178	-4.025	3652	3505	-147	-0.04025	29	2938	2	14	0	4	456	905	0.79735	22.1	 	132	218	27	58	98	269	350	0	0	0	0	0	0	61	272	53943913	36179.6868	28487	49226475	32345	0	0	2575.694209	415112.0201
+
+The income data have a federal tract number, so it will be possible to compare that data to the neighborhood data in Foursquare.
+
+The Foursquare data has the grocery store category, so we should be able to filter the queries for just potential competitors and other Whole Foods. You can find a link to the DC income data here: https://opendata.dc.gov/datasets/census-tracts-by-median-income-2000 and https://opendata.dc.gov/datasets/acs-2018-median-household-income-variables-tract/data?geometry=-77.153%2C38.891%2C-76.892%2C38.938&orderBy=B19049_001E&orderByAsc=false 
